@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: purple;
+            border-bottom: 1px solid gray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Web Components</h1>
+    <user-card name='Rezwan' avatar='https://randomuser.me/api/portraits/men/1.jpg'>
+        <div slot='email'>admin@gmail.com</div>
+        <div slot='contact'>124578-4154-45</div>
+    </user-card>
+
+    <user-card name='Abir' avatar='https://randomuser.me/api/portraits/men/3.jpg'>
+        <div slot='email'>author@gmail.com</div>
+        <div slot='contact'>0000-4154-45</div>
+    </user-card>
+
+    <user-card name='Asif' avatar='https://randomuser.me/api/portraits/men/4.jpg'>
+        <div slot='email'>h@gmail.com</div>
+        <div slot='contact'>111-4154-45</div>
+    </user-card>
+    <script src="userCard.js"></script>
+</body>
+
+</html>
